@@ -1,0 +1,70 @@
+<html>
+<head> 
+<title>registration </title>
+<script> 
+       function nimmi()
+	   {
+	   var name =  document.getElementById("name");
+	   var number=  document.getElementById("number");
+	   var pass =  document.getElementById("pass");
+	   if(name.value.trim()=="" || number.value.trim()=="" || pass.value.trim() )
+	   {
+	      alter("invalid details");
+		  return false;
+	   }
+	   else
+	   {
+	   return true;
+	   }
+	   
+	   }
+</script>
+
+	 </head>
+	 <body bgcolor="lightblue">
+	 <br>
+	 <center><table  border="5" cellspacing="10" cellpadding=" 10">
+	 <tr><td><h1 style="color:red;">Registration Form</h1></td></tr></table></center>
+	 <br>
+	 <br>
+	 <form  onsubmit="return nimmi()" action="valid.html">
+	  <center> <b>First Name :<input type="text" id="name">
+	   <br>
+	   <br>
+	   last Name : <input type="text">
+	   <br>
+	   <br>
+	   Phone Number:<input type ="number"  id="number">
+	   <br>
+	   <br>
+	   Gender:&nbsp  Male<input type ="radio" name="same" value="male">&nbsp
+	   Female <input type ="radio"  name="same" value ="female">
+	   &nbsp Other<input type ="radio"  name="same" value ="other">
+	   <br>
+	   <br>
+	   Date of Birth : <input type="date"  name ="dob" required>
+	   <br>
+	   <br>
+	    section: <select name ="please select">
+		<option value="cse1">cse1</option>
+		<option value="cse2">cse2</option>
+		<option value="cse2">cse3</option>
+		</select>
+		<br>
+		<br>I like to play :&nbsp
+		Cricket<input type="checkbox"> Football<input type="checkbox"> Hockey<input type="checkbox">
+		<br>
+		<br>
+		E-mail:&nbsp <input type="email"  placeholder="b21cs123@kitsw.ac.in"><br><br>
+		Password(6-8):<input type="password" id="pass">
+		<br><br> 
+		<input type="reset">    <button type="submit" >create </button>
+		
+		</center>
+		
+	   </form>
+	   
+	   
+	   
+	 </body>
+	 </html>
